@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+ConsoleApplication1/ConsoleApplication1/bin/Debug/<?xml version="1.0"?>
 
 <project name="Simple NAnt Script" default="build" basedir=".">
 
@@ -8,15 +8,15 @@
 	<property name="fileName" value="ConsoleApplication1" overwrite="false" />
 
 	<target name="clean" description="clean up generated files">
-		<delete file="${fileName}.exe" failonerror="false" />
-		<delete file="${fileName}.pdb" failonerror="false" />
+		<delete file="ConsoleApplication1/ConsoleApplication1/bin/Debug/${fileName}.exe" failonerror="false" />
+		<delete file="ConsoleApplication1/ConsoleApplication1/bin/Debug/${fileName}.pdb" failonerror="false" />
 	</target>
 
 	<target name="build" description="compile source">
-		<echo message="${fileName}"  />
-		<csc target="exe" output="${fileName}.exe" debug="${debug}">
+		<echo message="ConsoleApplication1/ConsoleApplication1/bin/Debug/${fileName}"  />
+		<csc target="exe" output="ConsoleApplication1/ConsoleApplication1/bin/Debug/${fileName}.exe" debug="${debug}">
 			<sources>
-				<include name="${fileName}.cs" />
+				<include name="ConsoleApplication1/ConsoleApplication1/Program.cs" />
 			</sources>
 		</csc>
 	</target>
