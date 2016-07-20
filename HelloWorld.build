@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<project name="Simple NAnt Script" default="build" basedir=".">
+<project name="Simple NAnt Script" default="archive" basedir=".">
 
 	<description>A simple NAnt build file.</description>
 
@@ -20,5 +20,12 @@
 			</sources>
 		</csc>
 	</target>
-
-	</project>
+	
+	<target name="archive" depends="build">
+		<copy todir="e:\newDir">
+			<fileset basedir=".">
+				<include name="**/*" />
+			</fileset>
+		</copy>	
+	</target>
+</project>

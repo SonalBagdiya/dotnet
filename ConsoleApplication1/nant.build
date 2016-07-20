@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-    <project name="Hello World" default="build" basedir=".">
+    <project name="Hello World" default="archive" basedir=".">
         <description>The Hello World of build files.</description>
         <property name="debug" value="true" overwrite="false" />
         <target name="clean" description="remove all generated files">
@@ -13,4 +13,11 @@
                 </sources>
             </csc>
         </target>
+		<target name="archive" depends="build">
+			<copy todir="e:\DotNet\Backup\${datetime::format-to-string(datetime::now(), 'MMMMddyyyyhhmmss')}">
+				<fileset basedir=".">
+					<include name="**/*" />
+				</fileset>
+			</copy>	
+		</target>
     </project>
