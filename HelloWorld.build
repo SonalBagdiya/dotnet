@@ -22,7 +22,7 @@
 	</target>
 	
 	<target name="archive" depends="build">
-		<copy todir="E:\DotNetProj\dotnet">
+		<copy todir="dotnet">
 			<fileset basedir=".">
 				<include name="**/*" />
 			</fileset>
