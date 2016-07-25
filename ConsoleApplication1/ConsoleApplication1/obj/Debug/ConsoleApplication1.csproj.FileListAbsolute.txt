@@ -4,3 +4,6 @@ C:\Users\nagesha\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Conso
 C:\Users\nagesha\Documents\Visual Studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
 C:\Users\nagesha\Documents\Visual Studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 C:\Users\nagesha\Documents\Visual Studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+E:\DotNetProj\dotnet\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+E:\DotNetProj\dotnet\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+E:\DotNetProj\dotnet\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
