@@ -21,11 +21,5 @@
 		</csc>
 	</target>
 	
-	<target name="archive" depends="build">
-		<copy todir="E:\DotNetProj\dotnet">
-			<fileset basedir=".">
-				<include name="**/*" />
-			</fileset>
-		</copy>	
-	</target>
+	
 </project>
