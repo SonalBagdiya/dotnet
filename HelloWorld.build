@@ -5,18 +5,18 @@
 	<description>A simple NAnt build file.</description>
 
 	<property name="debug" value="true" overwrite="false" />
-	<property name="fileName" value="ConsoleApplication1" overwrite="false" />
+	<property name="fileName" value="Program" overwrite="false" />
 
 	<target name="clean" description="clean up generated files">
-		<delete file="ConsoleApplication1/ConsoleApplication1/bin/Debug/${fileName}.exe" failonerror="false" />
-		<delete file="ConsoleApplication1/ConsoleApplication1/bin/Debug/${fileName}.pdb" failonerror="false" />
+		<delete file="ConsoleApplication1/${fileName}.exe" failonerror="false" />
+		<delete file="ConsoleApplication1/${fileName}.pdb" failonerror="false" />
 	</target>
 
 	<target name="build" description="compile source">
-		<echo message="ConsoleApplication1/ConsoleApplication1/bin/Debug/${fileName}"  />
-		<csc target="exe" output="ConsoleApplication1/ConsoleApplication1/bin/Debug/${fileName}.exe" debug="${debug}">
+		<echo message="ConsoleApplication1/${fileName}"  />
+		<csc target="exe" output="ConsoleApplication1/${fileName}.exe" debug="${debug}">
 			<sources>
-				<include name="ConsoleApplication1/ConsoleApplication1/Program.cs" />
+				<include name="ConsoleApplication1/ConsoleApplication1/${fileName}.cs" />
 			</sources>
 		</csc>
 	</target>
